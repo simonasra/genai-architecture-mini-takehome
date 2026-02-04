@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Notes and drafts (keep candidate responses clean)
+notes/
+drafts/
+*.draft.md
+
+# Environment files
+.env
+.env.local
