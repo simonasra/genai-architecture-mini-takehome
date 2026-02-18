@@ -21,7 +21,7 @@ No coding is required. Your deliverable is a single markdown file.
 ### Instructions
 
 1. Read the context — Start with [`docs/CONTEXT.md`](docs/CONTEXT.md) to understand the company, roles, and constraints.
-2. Review the flawed design — Study [`docs/FLAWED_DESIGN.md`](docs/FLAWED_DESIGN.md) carefully. The design has intentional issues.
+2. Review the flawed design — Study [`docs/DESIGN.md`](docs/DESIGN.md) carefully. The design has intentional issues.
 3. Complete your response — Fill in [`CANDIDATE_RESPONSE.md`](CANDIDATE_RESPONSE.md) following the template.
 4. Submit — Commit your completed `CANDIDATE_RESPONSE.md` or share as instructed.
 
