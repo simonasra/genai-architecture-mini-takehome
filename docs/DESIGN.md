@@ -75,7 +75,7 @@ Schema access:
 
 ### 6. Debug Logger
 
-We had a few incidents early on where responses seemed off and nobody could figure out why, so the ops team asked us to keep complete records of each interaction. We now push everything to our central logging cluster — the full prompt context including whatever we pulled from RAG, any SQL the model generates, the complete result set that comes back from Snowflake, and the final answer we send to the user. It all lives there for about a month before rotating out, which has been really helpful for debugging weird edge cases.
+We had a few incidents early on where responses seemed off and nobody could figure out why, so the ops team asked us to keep complete records of each interaction. We now push everything to our central logging cluster — the full prompt context including whatever we pulled from RAG, any SQL the model generates, the complete result set that comes back from Snowflake, and the final answer we send to the user. Records are retained for 90 days before automatic deletion. This has been really helpful for debugging weird edge cases.
 
 ### 7. Admin Endpoint
 
@@ -118,7 +118,7 @@ The chatbot should handle queries like these:
 ### Query 5: Funnel metrics
 > **User:** "What's the conversion rate for the checkout flow?"
 >
-> Expected: Query events for checkout funnel, calculate conversion rate.
+> Expected: Calculate each day's checkout conversion percentage, then take the arithmetic mean of those percentages for the requested period.
 
 ### Query 6: Causal Analysis
 > **User:** "Why did user signups drop last Tuesday?"
