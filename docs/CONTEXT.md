@@ -44,6 +44,8 @@ A columnar database containing raw event data:
 - `sessions` table: `session_id`, `user_id`, `start_time`, `end_time`, `device`, `country`
 - Billions of rows, updated in near real-time
 
+Checkout conversion is the percentage of checkout-start sessions in the requested period that include a completed checkout.
+
 ### 2. Metrics API
 
 Pre-computed KPIs served via REST API:
